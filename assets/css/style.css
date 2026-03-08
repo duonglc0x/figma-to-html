@@ -20,6 +20,7 @@ body {
 a {
   text-decoration: none;
 }
+/* header */
 .header {
   background: #fffcf4;
 }
@@ -426,9 +427,205 @@ a {
 .features-2nd .content {
   width: 48%;
 }
-.features-2nd .images img{
+.features-2nd .images img {
   width: 470px;
   height: 440px;
   border-radius: 20px;
   object-fit: cover;
+}
+/* blog */
+.blogs {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #fffcf4;
+}
+.blogs .blog-top {
+  text-align: center;
+}
+.blogs .blog-top .heading-lv2 {
+  color: #130606;
+  font-family: Sen;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26; /* 126.316% */
+  letter-spacing: -0.76px;
+}
+.blogs .blog-top .desc {
+  color: #696262;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+  width: 448px;
+  margin: 16px auto 55px;
+}
+.blogs .blog-list {
+  display: flex;
+  gap: 30px;
+}
+.blogs .blog-item {
+  width: 33%;
+  border-radius: 16px;
+}
+.blogs .blog-item:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+}
+.blogs .blog-item img {
+  width: 100%;
+  height: 250px;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+}
+.blogs .blog-item .info {
+  padding: 20px 20px 28px;
+}
+.blog-item .info .date {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 12px;
+}
+.blog-item .info .title {
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+  margin-top: 12px;
+}
+.blog-item .info .btn {
+  margin-top: 12px;
+  cursor: pointer;
+}
+.blog-item .info .btn:hover {
+  background-color: var(--primary-color);
+}
+.blog-item .info .date::before {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  margin-right: 4px;
+  content: "";
+  display: inline-block;
+}
+.blog-item .info .date::after {
+  width: 160px;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.blogs .dots {
+  margin-top: 66px;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+.blogs .dots .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5f5b53;
+  cursor: pointer;
+}
+.blogs .dots .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
+/* footer */
+.footer {
+  background-color: #2e2100;
+  padding: 96px 135px 0;
+}
+.footer .row {
+  display: flex;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+}
+.footer .desc {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+  max-width: 267px;
+  min-height: 78px;
+  margin-top: 18px;
+}
+.footer .row .column {
+  width: 21.6%;
+}
+.footer .row .column:first-child {
+  width: 35%;
+}
+.footer .column .title {
+  display: inline-block;
+  padding-bottom: 14px;
+  padding-right: 48px;
+  border-bottom: 1px solid #59554b;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+.footer .column:first-child .title {
+  padding-right: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+  color: #fff;
+  font-family: Sen;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42; /* 141.667% */
+}
+.footer .column:first-child .title strong {
+  color: #ffb900;
+  font-family: Sen;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 34px;
+}
+.footer .column .list a {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.footer .column .list:last-child a {
+  margin-bottom: 0;
+}
+.footer .socials {
+  margin-top: 18px;
+  max-width: 96px;
+  display: flex;
+  gap: 18px;
+}
+.footer .list {
+  margin-top: 28px;
+}
+.footer .column .list strong {
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.86; /* 185.714% */
+}
+.footer .column .list a {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+.footer .copyright {
+  padding: 28px 0;
+  color: #807d74;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.86px; /* 185.714% */
 }
